@@ -1,0 +1,6 @@
+include ':ezyhttp-login'
+include ':chat-app'
+include ':mail-app'
+project(":chat-app").projectDir = file("examples/chat-app")
+project(":mail-app").projectDir = file("examples/mail-app")
+rootProject.name = 'sso-box'

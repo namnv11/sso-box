@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Login Chat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Main JavaScript -->
+    <script th:src="@{/js/main.js}"></script>
+    <!-- Main style-->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <!--    semantic ui-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+            integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+          integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <h2 class="ui image header">
+            <div class="content">
+                Log-in to your chat account
+            </div>
+        </h2>
+        <div class="ui stacked secondary segment">
+            <a href="http://localhost:8080/login?callBackUrl=http://localhost:8081/sso-login-callback" type="button" class="ui fluid large teal submit button">Login</a>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+<!--    const accessToken = getCookie("accessToken");-->
+<!--    if (accessToken != null && accessToken != '') {-->
+<!--        window.location.href = 'http://localhost:8081/home';-->
+<!--    }-->
+</script>
+
+</html>
